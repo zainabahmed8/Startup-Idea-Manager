@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Startup Idea Manager</title>
+</head>
+<body align="center">
+    <h1><font size="18" color="orange">
+        Startup Idea Manager</font></h1>
+
+    <form id="idea-form">
+        <label for="title"><font size="5">
+            Title:</font></label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="description"><font size="5" >
+            Description:</font></label><br>
+        <textarea id="description" name="description" rows="3" required></textarea><br><br>
+
+        <label for="priority"><font size="5" >
+            Priority:</font></label>
+        <select id="priority" name="priority" required>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br><br>
+
+        <input type="submit" value="Add Idea">
+    </form>
+
+    <h2><font size="5" color="orange">
+        Startup Ideas</font></h2>
+    <ul id="idea-list">
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
